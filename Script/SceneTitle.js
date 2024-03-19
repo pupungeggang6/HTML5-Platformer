@@ -17,7 +17,19 @@ function displayTitle() {
 }
 
 function mouseUpTitle(x, y, button) {
+    if (button === 0) {
+        if (menu === false) {
+            if (pointInsideRectArray(x, y, UI.title.buttonStart)) {
+                scene = 'Ready'
+                state = ''
+            }
 
+            if (pointInsideRectArray(x, y, UI.title.buttonNew)) {
+                scene = 'Ready'
+                state = ''
+            }
+        }
+    }
 }
 
 function keyDownTitle(key) {
