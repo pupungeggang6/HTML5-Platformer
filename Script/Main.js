@@ -33,7 +33,7 @@ function loop() {
 }
 
 function mouseUp(event) {
-    let canvasRect = canvas.getBoundingRectClient()
+    let canvasRect = canvas.getBoundingClientRect()
     let x = event.clientX - canvasRect.left
     let y = event.clientY - canvasRect.top
     let button = event.button

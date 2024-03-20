@@ -3,7 +3,7 @@ let context
 
 let scene = 'Title'
 let state = ''
-let pause = ''
+let menu = false
 
 let gameInstance
 let gameFrameCurrent
